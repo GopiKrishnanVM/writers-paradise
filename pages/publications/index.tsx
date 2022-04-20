@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "Nomad Pouch",
-    href: "#",
+    href: "nomad-pouch",
     price: "$50",
     availability: "White and Black",
     color: "White and black",
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     name: "Zip Tote Basket",
-    href: "#",
+    href: "zip-toe",
     price: "$140",
     availability: "Washed Black",
     color: "White and black",
@@ -32,7 +32,7 @@ const products = [
   {
     id: 3,
     name: "Medium Stuff Satchel",
-    href: "#",
+    href: "medium-stuff",
     price: "$220",
     availability: "Blue",
     color: "White and black",
@@ -83,7 +83,7 @@ const IndexPage: NextPage<Props> = ({}) => {
                 </div>
               </div>
               <div className="mt-6">
-                <NextLink href={product.href}>
+                <NextLink href={`/publications/${product.href}`}>
                   <a className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">
                     Go to Details
                     <span className="sr-only">, {product.name}</span>
